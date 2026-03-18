@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protect Function Quick Guide | NIST CSF 2.0</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+    h1 { color: #0f172a; border-bottom: 3px solid #22c55e; padding-bottom: 12px; }
+    h2 { color: #15803d; margin-top: 32px; }
+    .category {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 16px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .category h3 { margin-top: 0; display: flex; align-items: center; gap: 10px; }
+    .icon { font-size: 24px; }
+    ul { margin: 8px 0; padding-left: 24px; }
+    li { margin: 8px 0; }
+    .layers {
+      background: linear-gradient(135deg, #15803d 0%, #22c55e 100%);
+      color: white;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .layers h3 { margin-top: 0; color: white; }
+    .tip {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Protect Function Quick Guide</h1>
+  <p>The Protect function develops and implements safeguards to ensure delivery of critical services. It's about building multiple layers of defense.</p>
+
+  <div class="layers">
+    <h3>Defense in Depth</h3>
+    <p>No single control is perfect. Layer multiple protections so that if one fails, others still provide security. Think: castle walls, moat, guards, locks, and alarms—not just one.</p>
+  </div>
+
+  <h2>Protect Categories</h2>
+
+  <div class="category">
+    <h3><span class="icon">🔐</span> Identity Management & Access Control</h3>
+    <p>Control who gets in and what they can do.</p>
+    <ul>
+      <li><strong>Least Privilege:</strong> Minimum access needed for the job</li>
+      <li><strong>MFA:</strong> Multiple factors to prove identity</li>
+      <li><strong>Account Lifecycle:</strong> Provision, review, deprovision</li>
+      <li><strong>Zero Trust:</strong> Never trust, always verify</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h3><span class="icon">💾</span> Data Security</h3>
+    <p>Protect data in all its states.</p>
+    <ul>
+      <li><strong>At Rest:</strong> Encrypt stored data</li>
+      <li><strong>In Transit:</strong> Use TLS/HTTPS for transfers</li>
+      <li><strong>In Use:</strong> Access controls and monitoring</li>
+      <li><strong>Classification:</strong> Not all data needs same protection</li>
+      <li><strong>DLP:</strong> Prevent unauthorized data exfiltration</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h3><span class="icon">🎓</span> Awareness & Training</h3>
+    <p>Your people are your first line of defense.</p>
+    <ul>
+      <li><strong>Engaging:</strong> Real scenarios, not boring videos</li>
+      <li><strong>Frequent:</strong> Monthly micro-training, not annual marathons</li>
+      <li><strong>Measured:</strong> Track phishing click rates, report rates</li>
+      <li><strong>Culture:</strong> Security is everyone's responsibility</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h3><span class="icon">🛡️</span> Protective Technology</h3>
+    <p>Tools that defend your environment.</p>
+    <ul>
+      <li><strong>Firewalls:</strong> Control network traffic</li>
+      <li><strong>EDR/XDR:</strong> Endpoint detection and response</li>
+      <li><strong>IDS/IPS:</strong> Detect and prevent intrusions</li>
+      <li><strong>Segmentation:</strong> Limit blast radius of breaches</li>
+      <li><strong>AI/Automation:</strong> Speed and scale for modern threats</li>
+    </ul>
+  </div>
+
+  <div class="tip">
+    <h4>Common Pitfall: Tool Overload</h4>
+    <p>Buying more tools doesn't mean better security. Organizations often end up with overlapping products, alert fatigue, and integration gaps. Focus on a cohesive, well-orchestrated defense rather than a pile of fancy gadgets.</p>
+  </div>
+
+  <div class="tip">
+    <h4>Industry Context Matters</h4>
+    <p>Different industries have different protection priorities:</p>
+    <ul>
+      <li><strong>Healthcare:</strong> PHI protection, HIPAA compliance</li>
+      <li><strong>Financial:</strong> PCI-DSS, fraud prevention</li>
+      <li><strong>Legal:</strong> Client confidentiality, privilege protection</li>
+      <li><strong>Retail:</strong> Payment security, customer data</li>
+    </ul>
+  </div>
+</body>
+</html>

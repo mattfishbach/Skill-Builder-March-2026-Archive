@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Access Control Best Practices | NIST CSF 2.0</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+    h1 { color: #0f172a; border-bottom: 3px solid #3b82f6; padding-bottom: 12px; }
+    h2 { color: #1e40af; margin-top: 32px; }
+    .principle {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 16px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      border-left: 4px solid #3b82f6;
+    }
+    .principle h3 { margin-top: 0; color: #1e40af; }
+    .warning {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 20px 0;
+    }
+    .warning h4 { margin-top: 0; color: #dc2626; }
+    ul { margin: 8px 0; padding-left: 24px; }
+    li { margin: 8px 0; }
+    .case-study {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Access Control Best Practices</h1>
+  <p>Access control is your first line of defense. These principles help ensure the right people have the right access at the right time—and no more.</p>
+
+  <h2>Core Principles</h2>
+
+  <div class="principle">
+    <h3>1. Principle of Least Privilege</h3>
+    <p>Users should have only the minimum access necessary to do their job.</p>
+    <ul>
+      <li>Start with zero access and add only what's needed</li>
+      <li>Review access regularly and remove what's no longer required</li>
+      <li>Separate admin accounts from daily-use accounts</li>
+      <li>Just-in-time access for elevated privileges</li>
+    </ul>
+  </div>
+
+  <div class="principle">
+    <h3>2. Multi-Factor Authentication (MFA)</h3>
+    <p>Require at least two forms of verification for all access.</p>
+    <ul>
+      <li>Something you know (password)</li>
+      <li>Something you have (phone, security key)</li>
+      <li>Something you are (fingerprint, face)</li>
+      <li>MFA blocks 99% of automated attacks (Microsoft)</li>
+    </ul>
+  </div>
+
+  <div class="principle">
+    <h3>3. Account Lifecycle Management</h3>
+    <p>Manage accounts from creation to deletion.</p>
+    <ul>
+      <li>Provision access only after proper approval</li>
+      <li>Review access when roles change</li>
+      <li>Deprovision immediately when access ends</li>
+      <li>Audit dormant accounts regularly</li>
+    </ul>
+  </div>
+
+  <div class="principle">
+    <h3>4. Individual Accountability</h3>
+    <p>Every action should be traceable to a specific person.</p>
+    <ul>
+      <li>No shared accounts or credentials</li>
+      <li>Unique usernames for each individual</li>
+      <li>Comprehensive logging of all access</li>
+      <li>Regular review of access logs</li>
+    </ul>
+  </div>
+
+  <div class="principle">
+    <h3>5. Zero Trust</h3>
+    <p>Never trust, always verify—regardless of location.</p>
+    <ul>
+      <li>Verify every request, every time</li>
+      <li>Assume breach and limit blast radius</li>
+      <li>Continuous authentication, not just at login</li>
+      <li>Network location doesn't equal trust</li>
+    </ul>
+  </div>
+
+  <h2>Common Access Control Failures</h2>
+
+  <div class="warning">
+    <h4>Zombie Accounts</h4>
+    <p>Accounts that remain active after users leave or change roles. The Colonial Pipeline breach started with a forgotten VPN account.</p>
+  </div>
+
+  <div class="warning">
+    <h4>Privilege Creep</h4>
+    <p>Access accumulates over time as people change roles but never lose old permissions. Results in users with far more access than they need.</p>
+  </div>
+
+  <div class="warning">
+    <h4>Shared Credentials</h4>
+    <p>Multiple people using the same account. Destroys accountability and makes MFA ineffective.</p>
+  </div>
+
+  <div class="case-study">
+    <h4>Case Study: Colonial Pipeline (2021)</h4>
+    <p>A single compromised VPN account—inactive and without MFA—led to a ransomware attack that shut down the largest fuel pipeline in the US. The account belonged to an employee who had left the company but was never deprovisioned.</p>
+    <p><strong>Lesson:</strong> Account lifecycle management and MFA aren't optional.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSF Implementation Roadmap Template | NIST CSF 2.0</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+    h1 { color: #0f172a; border-bottom: 3px solid #0ea5e9; padding-bottom: 12px; }
+    h2 { color: #0369a1; margin-top: 32px; }
+    .phase {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 16px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .phase-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .phase h3 { margin: 0; color: #0369a1; }
+    .timeline {
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    ul { margin: 8px 0; padding-left: 24px; }
+    li { margin: 8px 0; }
+    .deliverable {
+      background: #f0f9ff;
+      border-radius: 6px;
+      padding: 10px 14px;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+    .deliverable strong { color: #0369a1; }
+    .principle {
+      background: linear-gradient(135deg, #0369a1 0%, #0ea5e9 100%);
+      color: white;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .principle h3 { margin-top: 0; color: white; }
+    .metrics {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 16px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      border-left: 4px solid #0ea5e9;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    th { background: #f1f5f9; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <h1>CSF Implementation Roadmap Template</h1>
+  <p>Use this template to create a phased implementation plan that fits your organization's context, resources, and risk profile.</p>
+
+  <div class="principle">
+    <h3>Key Principle: Start with Identify</h3>
+    <p>You can't protect what you don't know you have. Every successful CSF implementation begins with asset inventory and risk assessment. Resist the temptation to jump straight to buying security tools.</p>
+  </div>
+
+  <h2>Phased Implementation</h2>
+
+  <div class="phase">
+    <div class="phase-header">
+      <h3>Phase 1: Foundation</h3>
+      <span class="timeline">Months 1-2</span>
+    </div>
+    <p><strong>Focus:</strong> Identify function + Quick Wins</p>
+    <ul>
+      <li>Complete asset inventory (hardware, software, data, cloud)</li>
+      <li>Conduct initial risk assessment</li>
+      <li>Establish basic governance (assign roles, get executive sponsor)</li>
+      <li>Quick wins: Enable MFA, fix obvious access issues</li>
+      <li>Identify regulatory requirements (HIPAA, PCI, etc.)</li>
+    </ul>
+    <div class="deliverable">
+      <strong>Deliverables:</strong> Asset inventory, Risk register, Governance charter, Quick win completion list
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-header">
+      <h3>Phase 2: Core Protections</h3>
+      <span class="timeline">Months 3-4</span>
+    </div>
+    <p><strong>Focus:</strong> Protect + Detect Foundations</p>
+    <ul>
+      <li>Deploy endpoint protection (EDR) across all devices</li>
+      <li>Implement basic monitoring and alerting</li>
+      <li>Data classification and encryption for sensitive data</li>
+      <li>Launch security awareness training program</li>
+      <li>Access control review and least privilege implementation</li>
+    </ul>
+    <div class="deliverable">
+      <strong>Deliverables:</strong> EDR deployed, Monitoring baseline, Data classification policy, Training program launched
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-header">
+      <h3>Phase 3: Maturity</h3>
+      <span class="timeline">Months 5-6</span>
+    </div>
+    <p><strong>Focus:</strong> Respond + Recover + Continuous Improvement</p>
+    <ul>
+      <li>Document and test incident response plan</li>
+      <li>Conduct tabletop exercise</li>
+      <li>Test backup and recovery procedures</li>
+      <li>First vulnerability assessment</li>
+      <li>Create metrics dashboard for leadership</li>
+      <li>Plan next 12-month roadmap</li>
+    </ul>
+    <div class="deliverable">
+      <strong>Deliverables:</strong> IR plan (tested), Backup validation report, Metrics dashboard, Year 2 roadmap
+    </div>
+  </div>
+
+  <h2>Measuring Success</h2>
+
+  <div class="metrics">
+    <h3>Quantitative Metrics</h3>
+    <table>
+      <tr>
+        <th>Metric</th>
+        <th>Target</th>
+      </tr>
+      <tr>
+        <td>Asset inventory completion</td>
+        <td>100%</td>
+      </tr>
+      <tr>
+        <td>MFA adoption rate</td>
+        <td>>95%</td>
+      </tr>
+      <tr>
+        <td>Training completion rate</td>
+        <td>>90%</td>
+      </tr>
+      <tr>
+        <td>Mean time to detect (MTTD)</td>
+        <td>Establish baseline, then reduce</td>
+      </tr>
+      <tr>
+        <td>Critical vulnerabilities open >30 days</td>
+        <td>0</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="metrics">
+    <h3>Communicating to Leadership</h3>
+    <ul>
+      <li><strong>Monthly 1-pager:</strong> Milestones completed, risks addressed, next priorities</li>
+      <li><strong>Business language:</strong> Connect to revenue, compliance, customer trust</li>
+      <li><strong>Visual progress:</strong> Roadmap status, maturity scores, trend lines</li>
+      <li><strong>Risk reduction:</strong> "We've reduced our exposure to X by Y%"</li>
+    </ul>
+  </div>
+
+  <div class="principle">
+    <h3>Tailoring to Your Context</h3>
+    <p>Every organization is different. Consider:</p>
+    <ul>
+      <li><strong>Industry:</strong> Healthcare, finance, retail have different priorities</li>
+      <li><strong>Size:</strong> 50 employees vs 5,000 requires different approaches</li>
+      <li><strong>Budget:</strong> Prioritize high-impact, low-cost items first</li>
+      <li><strong>Maturity:</strong> Don't skip foundations to chase advanced tools</li>
+    </ul>
+  </div>
+</body>
+</html>

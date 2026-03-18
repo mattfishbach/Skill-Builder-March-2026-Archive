@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Builder Demo - UX Summary</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1 {
+      color: #0a66c2;
+      border-bottom: 3px solid #0a66c2;
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: #0a66c2;
+      margin-top: 30px;
+    }
+    h3 {
+      color: #444;
+      margin-top: 20px;
+    }
+    .section {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    ul {
+      margin: 10px 0;
+    }
+    li {
+      margin: 8px 0;
+    }
+    .highlight {
+      background: #e8f4fc;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    .flow-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin: 15px 0;
+    }
+    .step-number {
+      background: #0a66c2;
+      color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 14px;
+    }
+    @media print {
+      body { padding: 20px; }
+      .section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Skill Builder Demo - UX Summary</h1>
+  <p><strong>LinkedIn Learning AI-Powered Interactive Practice</strong></p>
+
+  <div class="section">
+    <h2>Overview</h2>
+    <p>Skill Builder is an AI-powered interactive learning feature that enables learners to practice and refine skills through scenario-based conversations with an AI tutor during LinkedIn Learning courses.</p>
+  </div>
+
+  <h2>User Experience Flow</h2>
+
+  <div class="section">
+    <h3>1. Opening Screen</h3>
+    <p>When the demo loads, a gray overlay slides down (0.5 sec animation) presenting:</p>
+    <ul>
+      <li><strong>"What is Skill Builder?"</strong> - Title in large blue font</li>
+      <li>Three key value propositions as bullet points</li>
+      <li><span class="highlight">Start Exploring</span> button to begin</li>
+      <li>Keyboard shortcut: Press "d" to skip directly to the demo</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>2. Course Interface</h3>
+    <p>A LinkedIn Learning-style course view with:</p>
+    <ul>
+      <li><strong>Dark sidebar (TOC)</strong> - Table of contents with expandable chapters</li>
+      <li><strong>Main content area</strong> - Video player or Skill Builder exercises</li>
+      <li><strong>Header</strong> - Course title, bookmarks, sharing options</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>3. Skill Builder Modules</h3>
+    <p>Two practice modules are available:</p>
+    
+    <h4>Chapter 1: Identifying Project Stakeholders</h4>
+    <ul>
+      <li>Created from existing exercise files (rarely seen by learners)</li>
+      <li>AI agent mined data for goals, reference docs, and ideal answers</li>
+      <li>Feedback flows from ideal answer + video scripts</li>
+    </ul>
+
+    <h4>Chapter 2: Work Breakdown Structure Review</h4>
+    <ul>
+      <li>AI agent dynamically reviewed course scripts</li>
+      <li>Auto-generated PDF for learner reference</li>
+      <li>Interactive WBS review exercise</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>4. Conversation Flow</h3>
+    <div class="flow-step">
+      <div class="step-number">1</div>
+      <div><strong>Intro Phase:</strong> Goal presentation, reference materials, "Start Skill Builder" button</div>
+    </div>
+    <div class="flow-step">
+      <div class="step-number">2</div>
+      <div><strong>Practice Phase:</strong> Scenario presented, learner types response in text area</div>
+    </div>
+    <div class="flow-step">
+      <div class="step-number">3</div>
+      <div><strong>AI Evaluation:</strong> Response scored (Levels 1-5), personalized feedback provided</div>
+    </div>
+    <div class="flow-step">
+      <div class="step-number">4</div>
+      <div><strong>Iteration:</strong> Up to 3 attempts allowed, encouraging improvement</div>
+    </div>
+    <div class="flow-step">
+      <div class="step-number">5</div>
+      <div><strong>Completion:</strong> Final score recorded, skill credits awarded</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>5. Scoring System</h3>
+    <ul>
+      <li><strong>Level 1-2:</strong> Needs significant improvement</li>
+      <li><strong>Level 3:</strong> Meets basic expectations</li>
+      <li><strong>Level 4:</strong> Exceeds expectations</li>
+      <li><strong>Level 5:</strong> Expert-level response</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>6. Demo Shortcuts Panel</h3>
+    <p>A floating panel at the bottom (not learner-facing) provides:</p>
+    <ul>
+      <li><strong>Callouts button:</strong> Shows how each Skill Builder was created</li>
+      <li><strong>AI Helpfulness slider:</strong> Rate the AI feedback quality</li>
+      <li><strong>Sample Responses:</strong> Pre-written responses for quick demos</li>
+      <li><strong>Ideal Answer:</strong> The target response for reference</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>7. Skill Gain Summary</h3>
+    <p>Accessible from the TOC, showing:</p>
+    <ul>
+      <li>Accumulated skill credits across domains</li>
+      <li>Based on semantic tagging of content</li>
+      <li>Shareable with peers, profile, or manager</li>
+      <li>Enterprise API integration for tracking learning gains</li>
+    </ul>
+  </div>
+
+  <h2>Key Design Decisions</h2>
+  <div class="section">
+    <ul>
+      <li>Conversational Socratic learning approach</li>
+      <li>Session-based tracking (no login required for demo)</li>
+      <li>Feedback bounded by ideal answers + course scripts for accuracy</li>
+      <li>3 attempts per module to encourage iterative learning</li>
+      <li>Visual consistency with LinkedIn Learning brand</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <p>Generated from Skill Builder Demo | LinkedIn Learning AI Practice Feature</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detect-Respond-Recover Improvement Guide | NIST CSF 2.0</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+    h1 { color: #0f172a; border-bottom: 3px solid #8b5cf6; padding-bottom: 12px; }
+    h2 { color: #6d28d9; margin-top: 32px; }
+    .function {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 16px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .detect { border-left: 4px solid #eab308; }
+    .respond { border-left: 4px solid #f97316; }
+    .recover { border-left: 4px solid #22c55e; }
+    .function h3 { margin-top: 0; }
+    ul { margin: 8px 0; padding-left: 24px; }
+    li { margin: 8px 0; }
+    .metric {
+      background: #f5f3ff;
+      border-radius: 6px;
+      padding: 12px;
+      margin: 12px 0;
+    }
+    .metric strong { color: #6d28d9; }
+    .connection {
+      background: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 100%);
+      color: white;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .connection h3 { margin-top: 0; color: white; }
+  </style>
+</head>
+<body>
+  <h1>Detect-Respond-Recover Improvement Guide</h1>
+  <p>After an incident, use this guide to identify improvements across all three functions. The goal: detect faster, respond smarter, recover stronger.</p>
+
+  <div class="connection">
+    <h3>The Three Functions Work Together</h3>
+    <p><strong>Detect</strong> finds the threat → <strong>Respond</strong> contains and investigates → <strong>Recover</strong> restores operations and learns</p>
+    <p>Weakness in one function cascades to the others. A 4-day detection delay means 4 extra days of damage before response can even begin.</p>
+  </div>
+
+  <h2>Detect Improvements</h2>
+  <div class="function detect">
+    <h3>Goal: Find threats faster</h3>
+    <ul>
+      <li><strong>Endpoint Detection (EDR/XDR):</strong> Monitors endpoints for suspicious behavior, not just known signatures</li>
+      <li><strong>SIEM with tuned alerts:</strong> Aggregate logs and generate meaningful alerts (not noise)</li>
+      <li><strong>24/7 monitoring:</strong> Threats don't keep business hours—consider managed security services</li>
+      <li><strong>Behavioral baselines:</strong> Know what "normal" looks like to spot anomalies</li>
+      <li><strong>Threat intelligence:</strong> Stay aware of current attack patterns and IOCs</li>
+    </ul>
+    <div class="metric">
+      <strong>Key Metric:</strong> Mean Time to Detect (MTTD) - How long from intrusion to discovery?
+    </div>
+  </div>
+
+  <h2>Respond Improvements</h2>
+  <div class="function respond">
+    <h3>Goal: Contain and investigate faster</h3>
+    <ul>
+      <li><strong>Documented IR plan:</strong> Written procedures with clear roles and escalation paths</li>
+      <li><strong>Regular tabletop exercises:</strong> Practice response before real incidents</li>
+      <li><strong>Pre-established relationships:</strong> Forensics, legal, PR on retainer—not scrambling during crisis</li>
+      <li><strong>Network segmentation:</strong> Limit blast radius so one compromise doesn't mean full breach</li>
+      <li><strong>Automation:</strong> Auto-isolate compromised systems, auto-block known bad IPs</li>
+    </ul>
+    <div class="metric">
+      <strong>Key Metric:</strong> Mean Time to Contain (MTTC) - How long from detection to containment?
+    </div>
+  </div>
+
+  <h2>Recover Improvements</h2>
+  <div class="function recover">
+    <h3>Goal: Restore operations faster and stronger</h3>
+    <ul>
+      <li><strong>Tested backups:</strong> Regular restoration drills to ensure backups actually work</li>
+      <li><strong>Recovery prioritization:</strong> Know which systems to restore first (business critical)</li>
+      <li><strong>Immutable/offline backups:</strong> Backups that ransomware can't encrypt or delete</li>
+      <li><strong>Communication plan:</strong> Templates ready for customers, regulators, employees</li>
+      <li><strong>Post-incident review:</strong> Formal lessons learned process to improve for next time</li>
+    </ul>
+    <div class="metric">
+      <strong>Key Metric:</strong> Mean Time to Recover (MTTR) - How long from containment to normal operations?
+    </div>
+  </div>
+
+  <h2>Post-Incident Questions</h2>
+  <div class="function">
+    <h3>Ask These After Every Incident</h3>
+    <ul>
+      <li>How long did detection take? What could have caught it faster?</li>
+      <li>Did the response team know their roles? Where was confusion?</li>
+      <li>Did our backups work? How long did restoration take?</li>
+      <li>What controls failed? What controls worked?</li>
+      <li>How can we prevent this specific attack pattern in the future?</li>
+      <li>Did we communicate effectively internally and externally?</li>
+    </ul>
+  </div>
+</body>
+</html>

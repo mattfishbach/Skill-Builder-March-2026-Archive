@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incident Response Checklist | NIST CSF 2.0</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+    h1 { color: #0f172a; border-bottom: 3px solid #f97316; padding-bottom: 12px; }
+    h2 { color: #c2410c; margin-top: 32px; }
+    .phase {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 16px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .phase h3 { margin-top: 0; display: flex; align-items: center; gap: 10px; }
+    .time-badge {
+      background: #fed7aa;
+      color: #c2410c;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .checklist { list-style: none; padding: 0; margin: 16px 0; }
+    .checklist li {
+      padding: 10px 0 10px 32px;
+      border-bottom: 1px solid #e2e8f0;
+      position: relative;
+    }
+    .checklist li::before {
+      content: "☐";
+      position: absolute;
+      left: 8px;
+      color: #94a3b8;
+      font-size: 16px;
+    }
+    .warning {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 20px 0;
+    }
+    .warning h4 { margin-top: 0; color: #dc2626; }
+    .contacts {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Incident Response Checklist</h1>
+  <p>When a security incident occurs, speed and organization are critical. Use this checklist to guide your first 60 minutes of response.</p>
+
+  <div class="phase">
+    <h3>Phase 1: Initial Triage <span class="time-badge">0-15 minutes</span></h3>
+    <ul class="checklist">
+      <li>Confirm the alert is a real incident (not false positive)</li>
+      <li>Assess initial severity: Critical / High / Medium / Low</li>
+      <li>Document the time of detection and initial observations</li>
+      <li>Assign incident commander if not already designated</li>
+      <li>Start incident timeline documentation</li>
+    </ul>
+  </div>
+
+  <div class="phase">
+    <h3>Phase 2: Containment <span class="time-badge">15-30 minutes</span></h3>
+    <ul class="checklist">
+      <li>Isolate affected systems from the network (don't power off)</li>
+      <li>Block malicious IPs/domains at firewall</li>
+      <li>Disable compromised accounts</li>
+      <li>Preserve logs and evidence before they rotate</li>
+      <li>Take memory dumps if possible (for forensics)</li>
+      <li>Document all containment actions taken</li>
+    </ul>
+  </div>
+
+  <div class="phase">
+    <h3>Phase 3: Notifications <span class="time-badge">30-45 minutes</span></h3>
+    <ul class="checklist">
+      <li>Notify incident response team lead / CISO</li>
+      <li>Alert executive sponsor if severity warrants</li>
+      <li>Engage legal counsel (especially for data breaches)</li>
+      <li>Contact HR if insider threat suspected</li>
+      <li>Prepare initial internal communication</li>
+      <li>Determine if external forensics needed</li>
+    </ul>
+  </div>
+
+  <div class="phase">
+    <h3>Phase 4: Investigation <span class="time-badge">45-60 minutes</span></h3>
+    <ul class="checklist">
+      <li>Determine scope: What systems are affected?</li>
+      <li>Identify data at risk: What type? How much?</li>
+      <li>Investigate entry point: How did attackers get in?</li>
+      <li>Check for lateral movement: Are other systems compromised?</li>
+      <li>Establish timeline: When did the attack start?</li>
+      <li>Brief leadership on initial findings</li>
+    </ul>
+  </div>
+
+  <div class="warning">
+    <h4>Critical Mistakes to Avoid</h4>
+    <ul>
+      <li><strong>Don't wipe systems immediately</strong> - Destroys evidence needed for investigation</li>
+      <li><strong>Don't communicate externally too early</strong> - Wait until facts are known</li>
+      <li><strong>Don't assume it's contained</strong> - Attackers often have multiple footholds</li>
+      <li><strong>Don't wait until Monday</strong> - Friday attacks are intentional; delays cost more</li>
+      <li><strong>Don't go it alone</strong> - Engage the full response team</li>
+    </ul>
+  </div>
+
+  <div class="contacts">
+    <h4>Pre-Establish These Contacts</h4>
+    <p>Don't scramble to find help during an incident. Have these relationships ready:</p>
+    <ul>
+      <li>External forensics firm (on retainer if possible)</li>
+      <li>Legal counsel with breach experience</li>
+      <li>Crisis communications support</li>
+      <li>Cyber insurance carrier's incident hotline</li>
+      <li>Law enforcement contacts (FBI, local cyber unit)</li>
+    </ul>
+  </div>
+</body>
+</html>

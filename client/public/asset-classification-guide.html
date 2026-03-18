@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asset Classification Quick Reference | NIST CSF 2.0</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #0f172a;
+      border-bottom: 3px solid #3b82f6;
+      padding-bottom: 12px;
+    }
+    h2 {
+      color: #1e40af;
+      margin-top: 32px;
+    }
+    .level {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 16px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .level-critical { border-left: 4px solid #dc2626; }
+    .level-high { border-left: 4px solid #f97316; }
+    .level-medium { border-left: 4px solid #eab308; }
+    .level-low { border-left: 4px solid #22c55e; }
+    .level h3 {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .badge-critical { background: #fee2e2; color: #dc2626; }
+    .badge-high { background: #ffedd5; color: #c2410c; }
+    .badge-medium { background: #fef9c3; color: #a16207; }
+    .badge-low { background: #dcfce7; color: #15803d; }
+    ul { margin: 8px 0; padding-left: 24px; }
+    li { margin: 6px 0; }
+    .tip {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 24px 0;
+    }
+    .tip-title {
+      font-weight: 600;
+      color: #1e40af;
+      margin-bottom: 8px;
+    }
+    .shadow-it {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 24px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Asset Classification Quick Reference</h1>
+  <p>Use this guide to classify assets by criticality level based on their importance to business operations, sensitivity of data, and regulatory requirements.</p>
+
+  <h2>Criticality Levels</h2>
+
+  <div class="level level-critical">
+    <h3><span class="badge badge-critical">Critical</span> Crown Jewels</h3>
+    <p>Assets that, if compromised, would cause severe business disruption, major financial loss, or significant regulatory penalties.</p>
+    <ul>
+      <li>Customer/patient databases with PII or PHI</li>
+      <li>Payment processing systems (PCI-DSS scope)</li>
+      <li>Core business applications (ERP, CRM)</li>
+      <li>Domain controllers and authentication systems</li>
+      <li>Encryption keys and certificate authorities</li>
+    </ul>
+  </div>
+
+  <div class="level level-high">
+    <h3><span class="badge badge-high">High</span> Essential Operations</h3>
+    <p>Assets that support critical business functions or contain sensitive data that could cause significant harm if exposed.</p>
+    <ul>
+      <li>Email servers and collaboration platforms</li>
+      <li>HR systems with employee data</li>
+      <li>Source code repositories</li>
+      <li>Backup systems and disaster recovery infrastructure</li>
+      <li>VPN and remote access systems</li>
+    </ul>
+  </div>
+
+  <div class="level level-medium">
+    <h3><span class="badge badge-medium">Medium</span> Business Support</h3>
+    <p>Assets that support business operations but don't directly handle sensitive data or critical functions.</p>
+    <ul>
+      <li>Public-facing marketing websites</li>
+      <li>Internal documentation systems</li>
+      <li>Development/testing environments (without real data)</li>
+      <li>General business applications</li>
+      <li>Conference room systems</li>
+    </ul>
+  </div>
+
+  <div class="level level-low">
+    <h3><span class="badge badge-low">Low</span> General Assets</h3>
+    <p>Assets with minimal business impact if compromised, though still part of your inventory.</p>
+    <ul>
+      <li>IoT devices (smart appliances, environmental sensors)</li>
+      <li>Guest WiFi networks</li>
+      <li>Digital signage systems</li>
+      <li>Non-sensitive printers</li>
+    </ul>
+  </div>
+
+  <div class="shadow-it">
+    <div class="tip-title">Watch Out: Shadow IT</div>
+    <p>Forgotten or unauthorized systems are often HIGH risk regardless of their original purpose:</p>
+    <ul>
+      <li>Test servers that were never decommissioned</li>
+      <li>Applications installed without IT approval</li>
+      <li>Personal devices accessing company resources</li>
+      <li>Cloud services signed up by individual teams</li>
+    </ul>
+    <p><strong>These systems are often unpatched, unmonitored, and perfect entry points for attackers.</strong></p>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">Key Questions for Classification</div>
+    <ul>
+      <li>What data does this asset store, process, or transmit?</li>
+      <li>What regulations apply to this data (HIPAA, PCI-DSS, GDPR)?</li>
+      <li>What's the business impact if this asset is unavailable for 1 hour? 1 day? 1 week?</li>
+      <li>Could this asset be used as a stepping stone to access more critical systems?</li>
+      <li>Who knows this asset exists, and who is responsible for it?</li>
+    </ul>
+  </div>
+</body>
+</html>

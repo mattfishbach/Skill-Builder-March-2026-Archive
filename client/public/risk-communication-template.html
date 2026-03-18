@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Risk Communication Template | NIST CSF 2.0</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #0f172a;
+      border-bottom: 3px solid #3b82f6;
+      padding-bottom: 12px;
+    }
+    h2 {
+      color: #1e40af;
+      margin-top: 32px;
+    }
+    .template-box {
+      background: white;
+      border-radius: 8px;
+      padding: 24px;
+      margin: 20px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      border: 2px solid #e2e8f0;
+    }
+    .template-box h3 {
+      margin-top: 0;
+      color: #1e40af;
+    }
+    .placeholder {
+      background: #fef3c7;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-style: italic;
+    }
+    .comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .bad {
+      background: #fee2e2;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .good {
+      background: #dcfce7;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .bad h4, .good h4 {
+      margin-top: 0;
+    }
+    .bad h4 { color: #dc2626; }
+    .good h4 { color: #15803d; }
+    .tip {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 24px 0;
+    }
+    .tip-title {
+      font-weight: 600;
+      color: #1e40af;
+      margin-bottom: 8px;
+    }
+    ul { margin: 8px 0; padding-left: 24px; }
+    li { margin: 6px 0; }
+    .jargon-list {
+      background: #fef2f2;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    th {
+      background: #f1f5f9;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <h1>Executive Risk Communication Template</h1>
+  <p>Use this template to translate technical security risks into business language that executives can understand and act upon.</p>
+
+  <h2>The Executive Summary Template</h2>
+  <div class="template-box">
+    <h3>Structure Your Message</h3>
+    <ol>
+      <li><strong>What's happening?</strong> <span class="placeholder">[Describe the issue in plain language]</span></li>
+      <li><strong>Why is it urgent?</strong> <span class="placeholder">[Explain the threat level and timeline]</span></li>
+      <li><strong>What's the business impact?</strong> <span class="placeholder">[Quantify in dollars, customers, or reputation]</span></li>
+      <li><strong>What do we need to do?</strong> <span class="placeholder">[Clear action item with timeline]</span></li>
+      <li><strong>What happens if we don't act?</strong> <span class="placeholder">[Consequences of inaction]</span></li>
+    </ol>
+  </div>
+
+  <h2>Technical to Business Translation</h2>
+  <div class="jargon-list">
+    <h3>Avoid This Jargon</h3>
+    <table>
+      <tr>
+        <th>Technical Term</th>
+        <th>Business Translation</th>
+      </tr>
+      <tr>
+        <td>CVE / Vulnerability</td>
+        <td>Security flaw / weakness in our systems</td>
+      </tr>
+      <tr>
+        <td>RCE (Remote Code Execution)</td>
+        <td>Attackers could take control of our systems</td>
+      </tr>
+      <tr>
+        <td>CVSS Score 9.8</td>
+        <td>Extremely serious / critical severity</td>
+      </tr>
+      <tr>
+        <td>Unpatched servers</td>
+        <td>Systems missing security updates</td>
+      </tr>
+      <tr>
+        <td>Exploit code available</td>
+        <td>Attack tools are publicly available</td>
+      </tr>
+      <tr>
+        <td>Data exfiltration</td>
+        <td>Theft of customer/company data</td>
+      </tr>
+      <tr>
+        <td>Lateral movement</td>
+        <td>Attackers spreading through our network</td>
+      </tr>
+    </table>
+  </div>
+
+  <h2>Before and After Examples</h2>
+  <div class="comparison">
+    <div class="bad">
+      <h4>Too Technical</h4>
+      <p>"CVE-2024-1234 is a critical RCE vulnerability in Apache Struts 2.5.30 with a CVSS score of 9.8. We have 3 unpatched production servers and exploit code is publicly available on GitHub."</p>
+    </div>
+    <div class="good">
+      <h4>Executive-Friendly</h4>
+      <p>"We've found a serious security flaw in three of our customer-facing systems. Hackers are actively exploiting this at other companies, and attack tools are freely available. We need to apply updates within 48 hours to protect customer data."</p>
+    </div>
+  </div>
+
+  <h2>Quantifying Business Impact</h2>
+  <div class="tip">
+    <div class="tip-title">Make It Real with Numbers</div>
+    <ul>
+      <li><strong>Revenue at risk:</strong> "This system processes $X million in transactions annually"</li>
+      <li><strong>Customer impact:</strong> "X customers' data could be exposed"</li>
+      <li><strong>Regulatory fines:</strong> "HIPAA violations can cost up to $X per record"</li>
+      <li><strong>Downtime cost:</strong> "Each hour of outage costs us $X in lost sales"</li>
+      <li><strong>Recovery costs:</strong> "Average breach costs $X million to remediate"</li>
+    </ul>
+  </div>
+
+  <div class="template-box">
+    <h3>Example: Complete Executive Summary</h3>
+    <p>"We've discovered a critical security vulnerability in three of our customer-facing web servers. Hackers are actively exploiting this flaw at other companies, and attack tools are freely available online.</p>
+    <p>If exploited, attackers could take complete control of these servers, potentially accessing our customer database with 500,000 records and disrupting our online services.</p>
+    <p>We need to apply security patches within the next 48 hours, which will require a 2-hour maintenance window on Saturday night.</p>
+    <p>Delaying this fix significantly increases our risk of a breach that could cost us $2-5 million in recovery costs, regulatory fines, and reputation damage."</p>
+  </div>
+</body>
+</html>

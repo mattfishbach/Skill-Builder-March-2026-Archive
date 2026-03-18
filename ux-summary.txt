@@ -1,0 +1,142 @@
+SKILL BUILDER DEMO - UX SUMMARY
+================================
+LinkedIn Learning AI-Powered Interactive Practice
+
+OVERVIEW
+--------
+Skill Builder is an AI-powered interactive learning feature that enables learners to practice and refine skills through scenario-based conversations with an AI tutor during LinkedIn Learning courses.
+
+
+USER EXPERIENCE FLOW
+====================
+
+1. OPENING SCREEN
+-----------------
+- Gray overlay slides down from top (0.5 sec animation)
+- Title: "What is Skill Builder?" in large blue font
+- Three key value propositions as bullet points:
+  * AI agent for practicing skills during the flow of courses
+  * Tool to demonstrate skill gains to others
+  * Extends LIL library with interactive engagement and metrics
+- "Start Exploring" button to begin
+- Keyboard shortcut: Press "d" to skip directly to the demo
+
+
+2. COURSE INTERFACE
+-------------------
+LinkedIn Learning-style course view featuring:
+- Dark sidebar (TOC): Table of contents with expandable chapters
+- Main content area: Video player or Skill Builder exercises
+- Header: Course title, bookmarks, sharing options
+- Default selection: "Identifying Stakeholders" video
+
+
+3. SKILL BUILDER MODULES
+------------------------
+Two practice modules available:
+
+Chapter 1: Identifying Project Stakeholders
+- Created from existing exercise files (rarely seen by learners)
+- AI agent mined data for goals, reference docs, and ideal answers
+- Feedback flows from ideal answer + video scripts
+
+Chapter 2: Work Breakdown Structure Review
+- AI agent dynamically reviewed course scripts
+- Auto-generated PDF for learner reference
+- Interactive WBS review exercise
+
+
+4. CONVERSATION FLOW
+--------------------
+Step 1: INTRO PHASE
+  - Goal presentation
+  - Reference materials (PDFs, org charts)
+  - "Start Skill Builder" button
+
+Step 2: PRACTICE PHASE
+  - Scenario presented to learner
+  - Text area for typing response
+  - Submit button
+
+Step 3: AI EVALUATION
+  - Response scored (Levels 1-5)
+  - Personalized feedback provided
+  - Specific suggestions for improvement
+
+Step 4: ITERATION
+  - Up to 3 attempts allowed
+  - Encouraging improvement with each try
+  - Progress tracked
+
+Step 5: COMPLETION
+  - Final score recorded
+  - Skill credits awarded
+  - Option to continue to next module
+
+
+5. SCORING SYSTEM
+-----------------
+Level 1-2: Needs significant improvement
+Level 3: Meets basic expectations
+Level 4: Exceeds expectations
+Level 5: Expert-level response
+
+
+6. DEMO SHORTCUTS PANEL
+-----------------------
+Floating panel at bottom (not learner-facing):
+- Callouts button: Shows how each Skill Builder was created
+- AI Helpfulness slider: Rate the AI feedback quality (1-5)
+- Sample Responses: Pre-written responses for quick demos
+  * Response 1 → Level 3
+  * Response 2 → Level 4
+  * Response 3 → Level 5
+  * Ideal Answer → Level 5
+- "TypeIt" buttons to auto-populate responses
+
+
+7. SKILL GAIN SUMMARY
+---------------------
+Accessible from TOC in "Wrapping Up" section:
+- Accumulated skill credits across domains
+- Based on semantic tagging of content
+- Shareable with peers, profile, or manager
+- Enterprise API integration for tracking learning gains
+
+
+8. CALLOUTS OVERLAY
+-------------------
+Activated via Demo Shortcuts panel:
+- Three callouts appear next to TOC items
+- Explain how each Skill Builder was created
+- Highlight AI agent capabilities
+- 48rem fixed width for visual consistency
+
+
+KEY DESIGN DECISIONS
+====================
+- Conversational Socratic learning approach
+- Session-based tracking (no login required for demo)
+- Feedback bounded by ideal answers + course scripts for accuracy
+- 3 attempts per module to encourage iterative learning
+- Visual consistency with LinkedIn Learning brand (blue #0a66c2)
+- Demo panel for stakeholder presentations
+
+
+KEYBOARD SHORTCUTS
+==================
+- "d" key: Close opening screen, jump to demo
+
+
+TECHNICAL NOTES
+===============
+- React 18 with TypeScript
+- Tailwind CSS for styling
+- OpenAI GPT for AI feedback
+- PostgreSQL for attempt tracking
+- Framer Motion for animations
+
+
+---
+Generated from Skill Builder Demo
+LinkedIn Learning AI Practice Feature

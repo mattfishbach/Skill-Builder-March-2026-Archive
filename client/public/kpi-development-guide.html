@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developing Project KPIs With AI - Reference Guide</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { 
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; 
+      line-height: 1.6; 
+      color: #333; 
+      max-width: 800px; 
+      margin: 0 auto; 
+      padding: 40px 20px;
+      background: #f8fafc;
+    }
+    .header { 
+      background: linear-gradient(135deg, #0a66c2, #004182); 
+      color: white; 
+      padding: 30px; 
+      border-radius: 12px; 
+      margin-bottom: 30px;
+    }
+    .header h1 { font-size: 1.8rem; margin-bottom: 8px; }
+    .header p { opacity: 0.9; font-size: 1rem; }
+    .section { 
+      background: white; 
+      padding: 24px; 
+      border-radius: 12px; 
+      margin-bottom: 20px; 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .section h2 { 
+      color: #0a66c2; 
+      font-size: 1.3rem; 
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .step-number {
+      background: #0a66c2;
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    .section p { margin-bottom: 12px; }
+    .highlight { 
+      background: #fff7ed; 
+      border-left: 4px solid #f59e0b; 
+      padding: 16px; 
+      margin: 16px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .highlight strong { color: #b45309; }
+    .prompt-example {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 16px 0;
+      font-family: 'Consolas', monospace;
+      font-size: 0.9rem;
+      white-space: pre-wrap;
+    }
+    .key-elements {
+      background: #ecfdf5;
+      border: 1px solid #10b981;
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 20px;
+    }
+    .key-elements h3 { color: #047857; margin-bottom: 12px; }
+    .key-elements ul { padding-left: 20px; }
+    .key-elements li { margin-bottom: 8px; }
+    .footer {
+      text-align: center;
+      color: #64748b;
+      font-size: 0.9rem;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Developing Project KPIs With AI</h1>
+    <p>A quick reference guide for writing effective AI prompts to generate meaningful KPIs</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="step-number">1</span> Define Your Goals Clearly</h2>
+    <p>Start by identifying the core goals of your project with your stakeholders. Once you have clarity, you can use AI to help translate those goals into specific, measurable outcomes.</p>
+    <p>Ask the AI questions like:</p>
+    <ul style="margin-left: 20px; margin-top: 8px;">
+      <li>"Based on this goal, what metrics would indicate we're succeeding?"</li>
+      <li>"How can we make this objective measurable?"</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="step-number">2</span> Narrow KPIs to the Vital Few</h2>
+    <p>Once you have a list of potential KPIs, leverage AI to prioritize the ones that most directly align with your goals. Focus on metrics that not only track progress but are also critical to your leadership's decision-making.</p>
+    <div class="highlight">
+      <strong>Expert Tip:</strong> Not all KPIs carry the same weight and we don't want to track 10 different things. Measure the needle movers.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="step-number">3</span> Build a Tracking Plan</h2>
+    <p>Have AI help you generate and format a tracking plan to ensure all key stakeholders are aligned. This plan should outline:</p>
+    <ul style="margin-left: 20px; margin-top: 8px;">
+      <li><strong>Metric Name</strong> - What is being measured</li>
+      <li><strong>Definition</strong> - How the metric is calculated</li>
+      <li><strong>Target Value</strong> - The goal to achieve</li>
+      <li><strong>Measurement Frequency</strong> - How often it's measured</li>
+      <li><strong>Owner/Responsible Party</strong> - Who is accountable</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Example Prompt</h2>
+    <p>Here's an example of an effective prompt for generating KPIs:</p>
+    <div class="prompt-example">"I'm managing the development of an e-learning platform with goals of increasing user engagement, improving course completion rates, and enhancing user satisfaction. Suggest KPIs that measure progress against each goal."</div>
+    
+    <div class="key-elements">
+      <h3>Key Elements of an Effective KPI Prompt:</h3>
+      <ul>
+        <li><strong>State all project goals clearly</strong> - Be specific about what you're trying to achieve</li>
+        <li><strong>Request specific, measurable KPIs</strong> - Ask for metrics tied to each goal</li>
+        <li><strong>Ask for prioritization</strong> - Focus on the vital few, not everything possible</li>
+        <li><strong>Request a tracking plan structure</strong> - Include targets, frequency, and ownership</li>
+        <li><strong>Ensure actionability</strong> - Ask for KPIs that can actually be measured with available tools</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Reference: "The AI-Driven Project Manager" by Jean Kang</p>
+  </div>
+</body>
+</html>
